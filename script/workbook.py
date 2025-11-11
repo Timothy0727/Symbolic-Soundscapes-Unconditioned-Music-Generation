@@ -1,16 +1,12 @@
 # %%
 import pandas as pd
-import os
-import torch
 # import torchaudio
 from torch.utils.data import Dataset, DataLoader, random_split
 import torch.nn as nn
 import torch.nn.functional as F
 # from torchaudio.transforms import MelSpectrogram, AmplitudeToDB
 from tqdm import tqdm
-import librosa
 import numpy as np
-import miditoolkit
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import f1_score, average_precision_score, accuracy_score
 import random
@@ -30,8 +26,6 @@ import matplotlib.pyplot as plt
 import random
 from collections import defaultdict
 from hmmlearn import hmm
-import mido
-
 
 # %% [markdown]
 # # Task 1 Symbolic, unconditioned generation
@@ -54,10 +48,11 @@ import mido
 # %%
 # get midi files
 def get_file_lists():
-    files = sorted(glob.glob("./adl-piano-midi/Classical/**/*.mid", recursive=True))
+    files = sorted(glob.glob("../adl-piano-midi/Classical/**/*.mid", recursive=True))
     return files
 
 midi_files_path_list = get_file_lists()
+len(midi_files_path_list)
 
 # %% [markdown]
 # ## Features Extraction and Tokenization
@@ -334,7 +329,7 @@ mc_velocities = [int(e[1]) for e in mc_generated_events]
 mc_durations = [int(e[2]) for e in mc_generated_events]
 
 mc_midi = create_midi(pitches=mc_pitches, velocities=mc_velocities, durations=mc_durations)
-mc_midi.save('output/markov_output.mid')
+mc_midi.save('../output/markov_output.mid')
 
 # %%
 correct = 0
@@ -479,7 +474,7 @@ durations  = [e[2] for e in generated_events]
 
 # 6. Create and save the MIDI file
 hmm_midi = create_midi(pitches=pitches, velocities=velocities, durations=durations)
-hmm_midi.save('output/hmm_output.mid')
+hmm_midi.save('../output/hmm_output.mid')
 
 
 # %%
@@ -635,7 +630,7 @@ ngram_velocities = [e[1] for e in generated_events]
 ngram_durations = [e[2] for e in generated_events]
 
 midi = create_midi(ngram_pitches, ngram_durations, ngram_velocities)
-midi.save("output/ngram_output.mid")
+midi.save("../output/ngram_output.mid")
 print("Generated MIDI file saved as output/ngram_output.mid!")
 
 acc = ngram_model.evaluate_accuracy(tokenized_sequences)
@@ -940,7 +935,7 @@ hmm_poly_midi = create_midi_poly(
     channels=None,
     ticks_per_beat=96
 )
-hmm_poly_midi.save('output/hmm_poly_output.mid')
+hmm_poly_midi.save('../output/hmm_poly_output.mid')
 
 
 # %% [markdown]

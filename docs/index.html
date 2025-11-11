@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>workbook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7534,7 +7534,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=391fec84">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bdd65e05">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7544,17 +7544,30 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># get midi files</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">get_file_lists</span><span class="p">():</span>
-    <span class="n">files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">"./adl-piano-midi/Classical/**/*.mid"</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">"../adl-piano-midi/Classical/**/*.mid"</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">files</span>
 
 <span class="n">midi_files_path_list</span> <span class="o">=</span> <span class="n">get_file_lists</span><span class="p">()</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">midi_files_path_list</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=893fce2b">
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>1398</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f61f4dcd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7574,7 +7587,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e31dda59">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0c02d76d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7742,7 +7755,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dcad55f8">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=17550cb1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7763,7 +7776,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=49e99f2f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4446dcfb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7812,7 +7825,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=50b6b198">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=03abd419">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7851,7 +7864,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c113b4a0">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3ba96228">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7871,7 +7884,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=74282084">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d8d0c68d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7908,7 +7921,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=250af8d9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=61684b53">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7989,7 +8002,7 @@ a.anchor-link {
 <span class="n">mc_durations</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">mc_generated_events</span><span class="p">]</span>
 
 <span class="n">mc_midi</span> <span class="o">=</span> <span class="n">create_midi</span><span class="p">(</span><span class="n">pitches</span><span class="o">=</span><span class="n">mc_pitches</span><span class="p">,</span> <span class="n">velocities</span><span class="o">=</span><span class="n">mc_velocities</span><span class="p">,</span> <span class="n">durations</span><span class="o">=</span><span class="n">mc_durations</span><span class="p">)</span>
-<span class="n">mc_midi</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'output/markov_output.mid'</span><span class="p">)</span>
+<span class="n">mc_midi</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'../output/markov_output.mid'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8040,7 +8053,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=30a7fd41">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=de7f93e9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8156,7 +8169,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b82e21ef">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3fa768f8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8183,13 +8196,13 @@ a.anchor-link {
 
 <span class="c1"># 6. Create and save the MIDI file</span>
 <span class="n">hmm_midi</span> <span class="o">=</span> <span class="n">create_midi</span><span class="p">(</span><span class="n">pitches</span><span class="o">=</span><span class="n">pitches</span><span class="p">,</span> <span class="n">velocities</span><span class="o">=</span><span class="n">velocities</span><span class="p">,</span> <span class="n">durations</span><span class="o">=</span><span class="n">durations</span><span class="p">)</span>
-<span class="n">hmm_midi</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'output/hmm_output.mid'</span><span class="p">)</span>
+<span class="n">hmm_midi</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'../output/hmm_output.mid'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a8ff52b3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1896171d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8252,7 +8265,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=58d8d2ed">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4a836fa3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8271,7 +8284,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a117e8fe">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7a48fb16">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8372,7 +8385,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=52e7c1bb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e90af2a3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8392,7 +8405,7 @@ a.anchor-link {
 <span class="n">ngram_durations</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">generated_events</span><span class="p">]</span>
 
 <span class="n">midi</span> <span class="o">=</span> <span class="n">create_midi</span><span class="p">(</span><span class="n">ngram_pitches</span><span class="p">,</span> <span class="n">ngram_durations</span><span class="p">,</span> <span class="n">ngram_velocities</span><span class="p">)</span>
-<span class="n">midi</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">"output/ngram_output.mid"</span><span class="p">)</span>
+<span class="n">midi</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">"../output/ngram_output.mid"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Generated MIDI file saved as output/ngram_output.mid!"</span><span class="p">)</span>
 
 <span class="n">acc</span> <span class="o">=</span> <span class="n">ngram_model</span><span class="o">.</span><span class="n">evaluate_accuracy</span><span class="p">(</span><span class="n">tokenized_sequences</span><span class="p">)</span>
@@ -8436,7 +8449,7 @@ N-gram model accuracy: 0.6968
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b5a1757b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b42b12e3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8516,7 +8529,7 @@ N-gram model accuracy: 0.6968
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=df70ee8f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=70a312ee">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8540,7 +8553,7 @@ N-gram model accuracy: 0.6968
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6bad9b79">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ef0ba8c2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8759,14 +8772,14 @@ N-gram model accuracy: 0.6968
     <span class="n">channels</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
     <span class="n">ticks_per_beat</span><span class="o">=</span><span class="mi">96</span>
 <span class="p">)</span>
-<span class="n">hmm_poly_midi</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'output/hmm_poly_output.mid'</span><span class="p">)</span>
+<span class="n">hmm_poly_midi</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'../output/hmm_poly_output.mid'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=87548cdc">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=93848891">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8780,7 +8793,7 @@ N-gram model accuracy: 0.6968
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=927a8eb7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0622d72e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8824,7 +8837,7 @@ N-gram model accuracy: 0.6968
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7414bc51">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=df46a561">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8848,7 +8861,7 @@ N-gram model accuracy: 0.6968
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cf50c904">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7f4299b3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8887,7 +8900,7 @@ N-gram model accuracy: 0.6968
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b3173cd2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5782c60f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8913,15 +8926,15 @@ N-gram model accuracy: 0.6968
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Average log-likelihood: -1.4765704793933772
-Total log-likelihood: -138.79762506297746
+<pre>Average log-likelihood: -0.48204364521441745
+Total log-likelihood: -107.97777652802951
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1daa41b0">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=79a226e2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8931,7 +8944,7 @@ Total log-likelihood: -138.79762506297746
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=74a170ba">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8fa2c99c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8964,7 +8977,7 @@ Total log-likelihood: 0.0
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=867c4924">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0cb19c6a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8992,14 +9005,14 @@ Total log-likelihood: 0.0
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Average log-likelihood per transition: -1.4016607297841375
-Total log-likelihood: -156.9860017358234
+<pre>Average log-likelihood per transition: -0.18380953157255825
+Total log-likelihood: -77.20000326047446
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=88cd8b84">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9bb3d182">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
