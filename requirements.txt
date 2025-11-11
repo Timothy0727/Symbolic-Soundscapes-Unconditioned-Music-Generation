@@ -1,0 +1,10 @@
+numpy
+pandas
+mido
+hmmlearn
+matplotlib
+tqdm
+scikit-learn
+lightgbm
+tensorflow==2.*
+librosa
